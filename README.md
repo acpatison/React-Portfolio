@@ -5,7 +5,7 @@
 
 ## Description
 🔍 With this project, I utilized React.js to deploy a more up-to-date version of my original portfolios. Additionally, I updated all my projects and deployments that I had previously completed. I also included a form in order for anyone who visits my deployed website in the future to reach out to me via email with a message or comment.
-
+![PicOfApplication](https://github.com/acpatison/React-Portfolio/blob/master/public/Deployed%20App.png)
 Visit my deployed webpage: https://acpatison.github.io/React-Portfolio
 
 ## Table of Contents
