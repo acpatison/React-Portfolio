@@ -1,14 +1,16 @@
 let resumeData = {
-    "imagebaseurl":"https://rbhatia46.github.io/",
-    "name": "Rahul Bhatia",
-    "role": "Frontend Developer and Data Scientist",
-    "linkedinId":"Your LinkedIn Id",
-    "skypeid": "Your skypeid",
-    "roleDescription": "I like dabbling in various parts of frontend development and like to learn about new technologies, write technical articles or simply play games in my free time.",
+    // Update below URL once deployed to GitHub pages
+    // "imagebaseurl":"https://rbhatia46.github.io/",
+    "name": "Andrew Patison",
+    "role": "Software Consultant",
+    "linkedinId":"LinkedIn",
+    // "skypeid": "GitHub",
+    // Create your own short description
+    "roleDescription": "Welcome! I am a consultant specializing in Supply Chain Software implemenation. I dabble in front-end and back-end web development in my spare time. Additionally, I love learning about the stock market and have high interest in the development of FinTech.",
     "socialLinks":[
         {
           "name":"linkedin",
-          "url":"https://www.linkedin.com/in/rahul-bhatia-67ba08121/",
+          "url":"https://www.linkedin.com/in/andrewpatison/",
           "className":"fa fa-linkedin"
         },
         {
@@ -16,6 +18,7 @@ let resumeData = {
           "url":"https://github.com/acpatison",
           "className":"fa fa-github"
         },
+        // Must have a third account contact here. Stack overflow, twitter, etc.
         // {
         //   "name":"skype",
         //   "url":"http://twitter.com/rbhatia46",
@@ -24,6 +27,7 @@ let resumeData = {
       ],
     "aboutme":"My name is Andrew Patison and welcome to my ongoing work portfolio. I currently work as a Software Consultant in Atlanta for the firm Manhattan Associates. As a consultant, I work with client to implement Warehouse Management software with distribution centers all over North America. In addition, to work some of my hobbies include: furthering my professional development in as many ways as possible, running outside or working out, trying new foods, traveling, sports and hanging out with friends. Today, I am a new coder who is learning how to work with HTML, JavaScript, CSS and other coding languages so that I may be able to do better in my current consultant role with Manhattan Associates. I hope you look through some of my work below and can see my progress as we move along. Let me know if you like what you see!",
     "address":"Atlanta, Georgia, USA",
+    // Update your react portfolio page URL once deployed
     // "website":"https://rbhatia46.github.io",
     "education":[
       {
