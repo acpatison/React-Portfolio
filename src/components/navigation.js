@@ -1,31 +1,41 @@
-import React from 'react';
-import { Link } from 'react-router-dom'
-import $ from 'jquery';
-// const subDir = process.env.PUBLIC_URL;
+import React from "react";
+import { Navbar } from "react-bootstrap";
+import {NavLink} from "react-router-dom";
 
-const Navbar = () => {
-
-  const toggle = () => {
-    $('.navbar-collapse').collapse('hide')
-  }
-
+function Navigation(props) {
   return (
-    <nav className="navbar navbar-expand-sm sticky-top navbar-light bg-light" role="navigation">
-
-      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon"></span>
-      </button>
-
-      <div className="collapse navbar-collapse" id="navbarSupportedContent">
-        <div className="navbar-nav ml-auto" role="navigation">
-          <Link className="nav-item nav-link" onClick={toggle} to="/">Home</Link>
-          <Link className="nav-item nav-link" onClick={toggle} to="/portfolio/">Portfolio</Link>
-          <Link className="nav-item nav-link" onClick={toggle} to="/resume/">Resume</Link>
-        </div>
-      </div>
-    </nav>
-  )
+    <div>
+      <Navbar expand="lg" bg="dark" sticky="top">
+        <NavLink className="nav-link" to="/">
+          <div class="text-light">
+            <h4 class="nav-title-font">Andrew Patison</h4>
+          </div>
+        </NavLink>
+        <ul class="navbar-nav ml-auto navitem-indent">
+          <li class="nav-item">
+            <NavLink to="/about">
+              <div class="nav-font text-light">About Me</div>
+            </NavLink>
+          </li>
+          <li class="nav-item">
+            <NavLink to="/portfolio">
+              <div class="nav-font text-light">Portfolio</div>
+            </NavLink>
+          </li>
+          <li class="nav-item">
+            <NavLink to="/contact">
+              <div class="nav-font text-light">Contact</div>
+            </NavLink>
+          </li>
+          <li class="nav-item">
+            <NavLink to="/resume">
+              <div class="nav-font text-light">Resume</div>
+            </NavLink>
+          </li>
+        </ul>
+      </Navbar>
+    </div>
+  );
 }
 
-export default Navbar;
+export default Navigation;

@@ -340,6 +340,7 @@ textarea {
 
 .icon {
   padding: 10px;
+  max-height: 50px;
 }
 
 

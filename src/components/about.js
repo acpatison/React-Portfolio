@@ -13,6 +13,13 @@ function About() {
                 <p>
                 Certified in Lean Six Sigma and Full-Stack Web Development and looking to bridge the gap between functional and technical project implementation. As a hard-working, process-driven, and self-motivated learner, Andrew is dedicated to continuing to seek career growth, new opportunities, and challenges.
                 </p>
+
+
+                <br/>
+                <br/>
+                <br/>
+
+
             </div>
         </section>
     )

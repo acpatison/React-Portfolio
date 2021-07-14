@@ -24,7 +24,7 @@ function Resume() {
               />
             </a>
           </p>
-          <a href="../public/Resume.pdf" class="resumeLink">Download Resume</a>
+          <a href="https://github.com/acpatison/React-Portfolio/blob/master/public/Resume.pdf" class="resumeLink">Download Resume</a>
         </div>
       </div>
 
@@ -40,6 +40,9 @@ function Resume() {
           </ul>
         </div>
       </div>
+      <br/>
+      <br/>
+      <br/>
     </section>
   );
 }
