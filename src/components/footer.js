@@ -1,29 +1,13 @@
-import React, { Component } from 'react';
-export default class Footer extends Component {
-  render() {
-    let resumeData = this.props.resumeData;
+import React from 'react';
+
+function Footer() {   
     return (
-      <footer>
-      <div className="row">
-        <div className="twelve columns">
-          <ul className="social-links">
-            {
-              resumeData.socialLinks && resumeData.socialLinks.map((item)=>{
-                return(
-                  <li>
-                    <a href={item.url}>
-                    <i className={item.className} />
-                    </a>
-                  </li>
-                )
-              })
-            }
-          </ul>
-          
-        </div>
-        <div id="go-top"><a className="smoothscroll" title="Back to Top" href="#home"><i className="icon-up-open" /></a></div>
-      </div>
+    <footer className="footer bg-dark fixed-bottom">
+        <a href="https://github.com/fondofhats"><img src="https://img.icons8.com/color/48/000000/github--v1.png" alt="Github" className="icon"/></a>
+        <a href="https://www.linkedin.com/in/michaelgiddings/"><img src="https://img.icons8.com/fluent/48/000000/linkedin.png" alt="LinkedIn" className="icon"/></a>
+        <a href="http://michaelgiddings.com/"><img src="https://img.icons8.com/ios-glyphs/48/ffffff/trilby.png" alt="MichaelGiddings.com" className="icon"/></a>
     </footer>
-    );
-  }
+    )
 }
+
+export default Footer;
