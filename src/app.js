@@ -1,11 +1,11 @@
 import React from 'react';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import Header from './header';
+import Footer from './footer';
 import './app.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-function app() {
+function App() {
   return (
     <div>
       <Header />
@@ -14,4 +14,4 @@ function app() {
   );
 }
 
-export default app;
+export default App;
