@@ -1,45 +1,22 @@
-import React, { Component } from 'react';
-export default class About extends Component {
-  render() {
-    let resumeData = this.props.resumeData;
-    return (
-      <section id="about">
-         <div className="row">
+import React from 'react';
 
-            <div className="three columns">
+function About() {
+    return(
+        <section className="container">
+            <h2 class="top-title">Andrew C. Patison</h2>
+            <hr></hr>
+            <div>
+                <img class="mb-5" id="avatar" src="../../public/images/LinkedIn-Pic.jpg" alt="Andrew C. Patison" />
 
-               <img className="profile-pic"  src="./../../public/images/LinkedIn-Pic.jpg" alt="" />
-
+                <p>
+                Experienced Consultant skilled in managing client facing relationships and implementation of cloud and platform technology solutions helping to drive process automation and workforce efficiency. Adept in all project life cycle stages from gathering and navigating complicated client needs to delivery and go-live support.
+                </p>
+                <p>
+                Certified in Lean Six Sigma and Full-Stack Web Development and looking to bridge the gap between functional and technical project implementation. As a hard-working, process-driven, and self-motivated learner, Andrew is dedicated to continuing to seek career growth, new opportunities, and challenges.
+                </p>
             </div>
-
-            <div className="nine columns main-col">
-
-               <h2>About Me</h2>
-               <p>
-               {
-                 resumeData.aboutme
-               }
-               </p>
-
-               <div className="row">
-
-                  <div className="columns contact-details">
-
-                  <h2>Contact Details</h2>
-                  <p className="address">
-       						<span>{resumeData.name}</span>
-                     <br></br>
-       						   <span>
-                     {resumeData.address}
-                    </span>
-                    <br></br>
-                    <span>{resumeData.website}</span>
-       					   </p>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-    );
-  }
+        </section>
+    )
 }
+
+export default About;
