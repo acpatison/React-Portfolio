@@ -1,25 +1,19 @@
-// From Example 2
 import React, { useState } from 'react';
-import { validateEmail } from '../../utils/helpers';
+import { validateEmail } from '../utils/helpers';
 
 function ContactForm() {
-
     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
-
     const [errorMessage, setErrorMessage] = useState('');
-
     const { name, email, message } = formState;
 
     function handleChange(e) {
         if (e.target.name === 'email') {
             const isValid = validateEmail(e.target.value);
-    
                 if(!isValid) {
                     setErrorMessage('please enter a valid email');
                 } else {
                     setErrorMessage('');
                 }
-
             } else {
                 if (!e.target.value.length) {
                   setErrorMessage(`${e.target.name} is required.`);
@@ -27,12 +21,10 @@ function ContactForm() {
                   setErrorMessage('');
                 } 
         }
-
         if (!errorMessage) {
         setFormState({...formState, [e.target.name]: e.target.value })
         }
     }
-
     function handleSubmit(e) {
         e.preventDefault();
     }
@@ -51,7 +43,7 @@ return (
                 <input class="form-control" type="email"  name="email" defaultValue={email} onBlur={handleChange} />
             </div>
             <div class="mt-5" >
-                <label htmlFor="message">Message:</label>
+                <label htmlFor="message">Comments:</label>
                 <textarea class="form-control" name="message" defaultValue={message} onBlur={handleChange} rows="7" />
             </div> 
             {errorMessage && (
@@ -69,35 +61,3 @@ return (
 }
     
 export default ContactForm;
-
-
-
-
-// From Example 3
-
-// import React, { Component } from 'react';
-// export default class ContactUs extends Component {
-//   render() {
-//     let resumeData = this.props.resumeData;
-//     return (
-//       <section id="contact">
-//           <div className="row section-head">
-//             <div className="ten columns">
-//               <p className="lead">
-//               Feel free to contact me for any work or suggestions below
-//               </p>
-//             </div>
-//           </div>
-//           <div className="row">
-//             <aside className="eigth columns footer-widgets">
-//               <div className="widget">
-//                 <h4>Linked in :
-//                   {resumeData.linkedinId}
-//                 </h4>
-//               </div>
-//             </aside>
-//           </div>
-//         </section>
-//         );
-//   }
-// }
