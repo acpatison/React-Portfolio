@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Fitness Tracker",
-        "image": "",
+        "image": "https://github.com/acpatison/React-Portfolio/blob/master/public/images/Fitness-tracker.png",
         "github": "https://github.com/acpatison/wk18-homework",
         "deploy": "https://peaceful-garden-95048.herokuapp.com/"
     },
