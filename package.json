@@ -1,15 +1,9 @@
 {
-  "homepage": "git@github.com:acpatison/React-Portfolio.git",
+  "homepage": "https://github.com/:acpatison/React-Portfolio.git/",
   "name": "react-portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.32",
-    "@fortawesome/free-solid-svg-icons": "^5.15.1",
-    "@fortawesome/react-fontawesome": "^0.1.14",
-    "@testing-library/jest-dom": "^5.11.8",
-    "@testing-library/react": "^11.2.2",
-    "@testing-library/user-event": "^12.6.0",
     "bootstrap": "^4.5.3",
     "jquery": "^3.6.0",
     "popper": "^1.0.1",
@@ -22,11 +16,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"    
   },
   "eslintConfig": {
     "extends": [
@@ -48,5 +42,16 @@
   },
   "devDependencies": {
     "gh-pages": "^3.2.3"
+  },
+  "description": "![badge](https://img.shields.io/badge/license-ISC-brightgreen)<br />",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acpatison/React-Portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/acpatison/React-Portfolio/issues"
   }
 }
